@@ -1,3 +1,4 @@
 .DS_store
 data/
 stanza_corenlp/
+.ipynb_checkpoints/
