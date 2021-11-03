@@ -1,4 +1,4 @@
-status_id,word,sentiment
+status_id,sentence,sentiment
 1439740696974409731, RT @anitakissee : This is my favorite #Covid19vaccine video on TikTok right now .,Positive
 1439740696974409731, https://t.co/g4VvHPIX1f https://t.co/AdzdVE2sBe,Neutral
 1439739935959912448, RT @anitakissee : This is my favorite #Covid19vaccine video on TikTok right now .,Positive
@@ -469,7 +469,7 @@ status_id,word,sentiment
 1439492888249962497," RT @blackwomenviews : Tweeting this "" Black COVID - 19 Experts "" list again for those interested in following trustworthy leaders in the medical …",Neutral
 1439491809864978434," RT @blackwomenviews : Tweeting this "" Black COVID - 19 Experts "" list again for those interested in following trustworthy leaders in the medical …",Neutral
 1439490249743294464, RT @iamchanteezy : It ’s time to gather Onika in this two part read of her spreading misinformation about the #Covid19Vaccine https://t.co/Ue…,Neutral
-1439488726695096321," 🌸 🌿 🌸 If you want to be grow , it 's better to say welcome to the pains now .",Positive
+1439488726695096321," 🪴 🌸 🌿 🪴 🌸 If you want to be grow , it 's better to say welcome to the pains now .",Neutral
 1439488726695096321, #COVID19 #COVID19Vaccine https://t.co/2lLQ6h1e0I,Neutral
 1439486491286196224, RT @bullets_no : #WOKEAF #MAGA #KAG #TRUMP #COVID19 #Covid19Vaccine #depopulationagenda NOTHING 2 C HERE FOLKS 😎 KEEP MOVING 🏃🏻‍♂️ PFIZER …,Positive
 1439485609471619072, Testicular pain as an unusual presentation of COVID - 19 : a brief review of SARS - CoV - 2 and the testis #NickiMinaj … https://t.co/EFlnBbQ3ff,Negative
@@ -1962,7 +1962,7 @@ status_id,word,sentiment
 1438948920584019968, Visit the Seaforth & District Community Centre today ( Sept 17 ) 3 - 7PM for your #COVID19Vaccine - no appt .,Negative
 1438948920584019968, needed !,Positive
 1438948920584019968, Pf … https://t.co/jjRhFviMZ9,Neutral
-1438948871191805955, RT @UofSC : Get the shot and upload your #COVID19Vaccine card for the chance to win : 🏈 @GamecockFB tickets 🚗 Parking passes 💻 @Apple …,Neutral
+1438948871191805955, RT @UofSC : 🩹 Get the shot and upload your #COVID19Vaccine card for the chance to win : 🏈 @GamecockFB tickets 🚗 Parking passes 💻 @Apple …,Neutral
 1438948450402508817," New Yorkers can get $ 100 , free tickets , memberships or gifts for getting vaccinated against #COVID19 .",Neutral
 1438948450402508817, These giveawa … https://t.co/KkI6wrr9nW,Neutral
 1438948430060167168, Over 82 % of eligible Californians have received at least one dose of the #COVID19Vaccine .,Neutral
@@ -2464,7 +2464,7 @@ status_id,word,sentiment
 1438852184960077826, RT @PhillyCEAL : It ’s Friday !,Neutral
 1438852184960077826, Come for your FREE #Covid19Vaccine in #EastGermantown and #Ogontz today !,Neutral
 1438852184960077826, Lonnie Young Rec Center September 17 …,Neutral
-1438852075618807815, After taking a radioactive vaccine I became covidman 🦸 ♂️ #AstraZeneca #COVID19Vaccine https://t.co/ySayvUXt4T,Negative
+1438852075618807815, After taking a radioactive vaccine I became covidman 🦸‍♂️ #AstraZeneca #COVID19Vaccine https://t.co/ySayvUXt4T,Neutral
 1438851889773387782," RT @GovKathyHochul : Thanks to New Yorkers getting the vaccine , we were able to welcome Broadway back this week !",Positive
 1438851889773387782, Do n’t throw away your sho …,Neutral
 1438851826019799047, RT @htTweets : The debate over whether Americans should receive a booster dose of the Pfizer / BioNTech #Covid19Vaccine moves to a panel of in …,Neutral
@@ -3427,7 +3427,8 @@ status_id,word,sentiment
 1438569945466609669, You can find this and other great resources …,Positive
 1438568775494901768," RT @SMDhealthunit : #COVID19Vaccine pop - up clinics for TODAY Sept 16 École secondaire catholique Nouvelle - Alliance 249 Anne St. , N Barrie 4 …",Neutral
 1438567626750382086," RT @MultiEthnicCCA : Join us at Oak View Elementary this Saturday , where we 'll be administering free COVID - 19 vaccines to the community from …",Neutral
-1438566811130220554," RT @pchd : The COVID vaccine clinic at Abrams Public Health Center is back to being open Tuesday – Saturday , 1 – 8 p.m. For more information …",Negative
+1438566811130220554," RT @pchd : The COVID vaccine clinic at Abrams Public Health Center is back to being open Tuesday – Saturday , 1 – 8 p.m. .",Negative
+1438566811130220554, For more information …,Neutral
 1438566409261527050," RT @SMDhealthunit : #COVID19Vaccine pop - up clinics for TODAY Sept 16 École secondaire catholique Nouvelle - Alliance 249 Anne St. , N Barrie 4 …",Neutral
 1438566239098458112, @ZSFGCare 's Dr. Antonio Gomez made history as one of the very first people in SF to receive the #COVID19vaccine .,Positive
 1438566239098458112, Wa … https://t.co/nwxFh8qBCI,Neutral
@@ -3566,7 +3567,8 @@ status_id,word,sentiment
 1438536437620740101," RT @FTLCityNews : If you / someone you know is homebound & unable to travel to get the #COVID19Vaccine , health providers can bring the vaccine …",Neutral
 1438536177049645063, Chile will once again welcome international travelers !,Positive
 1438536177049645063, https://t.co/ZhD1ccLrKt #chile #covid19vaccine #travel … https://t.co/xK2WyEBFvC,Neutral
-1438535878712840196," RT @pchd : The COVID vaccine clinic at Abrams Public Health Center is back to being open Tuesday – Saturday , 1 – 8 p.m. For more information …",Negative
+1438535878712840196," RT @pchd : The COVID vaccine clinic at Abrams Public Health Center is back to being open Tuesday – Saturday , 1 – 8 p.m. .",Negative
+1438535878712840196, For more information …,Neutral
 1438534888257376258, @pfizer - BioNTech #COVID19Vaccine COMIRNATY ® Receives Full Health Canada Approval for Individuals 12 Years and Older https://t.co/ghQL9S6n5R,Neutral
 1438534008657248260, #COVID19Vaccine Clinic !,Neutral
 1438534008657248260," ✔ Friday , September 17th 9am - 7 pm ✔ 1420 S. Garey Ave #Pomona 91766 .",Neutral
@@ -3665,7 +3667,8 @@ status_id,word,sentiment
 1438520227461939208, Simple Life Rule …,Neutral
 1438519080403628044," RT @guyfelicella : Lmao , to all the anti vaxers who believe the #COVID19Vaccine is a way for the government to track your movements .",Positive
 1438519080403628044, Nah the …,Neutral
-1438518788899676161," The COVID vaccine clinic at Abrams Public Health Center is back to being open Tuesday – Saturday , 1 – 8 p.m. For mo … https://t.co/9ZOEwKw8Lv",Negative
+1438518788899676161," The COVID vaccine clinic at Abrams Public Health Center is back to being open Tuesday – Saturday , 1 – 8 p.m. .",Negative
+1438518788899676161, For mo … https://t.co/9ZOEwKw8Lv,Neutral
 1438518327366668291," Wearing a mask is still important , even if you ’ve received a COVID - 19 vaccine .",Positive
 1438518327366668291," Jennifer Trytten , our Director of In … https://t.co/jOOEGs7ojM",Neutral
 1438518258064187402," COVID - 19 Booster Dose Not Central Theme of Scientific and Public Health Discussions at the Moment , Says ICMR Chief … https://t.co/hEVOM7a6wn",Negative
@@ -4155,7 +4158,7 @@ status_id,word,sentiment
 1438308335644672000," RT @NSWHealth : Across NSW , 80.1 per cent of the over-16 population has received a first dose #COVID19vaccine , and 48.5 per cent are fully v …",Negative
 1438308034904690693," RT @NSWHealth : Across NSW , 80.1 per cent of the over-16 population has received a first dose #COVID19vaccine , and 48.5 per cent are fully v …",Negative
 1438307210803646465," RT @NSWHealth : Across NSW , 80.1 per cent of the over-16 population has received a first dose #COVID19vaccine , and 48.5 per cent are fully v …",Negative
-1438307179333816321, RT @UofSC : Get the shot and upload your #COVID19Vaccine card for the chance to win : 🏈 @GamecockFB tickets 🚗 Parking passes 💻 @Apple …,Neutral
+1438307179333816321, RT @UofSC : 🩹 Get the shot and upload your #COVID19Vaccine card for the chance to win : 🏈 @GamecockFB tickets 🚗 Parking passes 💻 @Apple …,Neutral
 1438307001772036097," RT @NSWHealth : Across NSW , 80.1 per cent of the over-16 population has received a first dose #COVID19vaccine , and 48.5 per cent are fully v …",Negative
 1438306828308279296," Across NSW , 80.1 per cent of the over-16 population has received a first dose #COVID19vaccine , and 48.5 per cent ar … https://t.co/A6AoTWNwjh",Negative
 1438306371947175940, RT @palazzo214 : @tribelaw More than 5.5 billion #covid19vaccine shot have been administered around the world .,Neutral
