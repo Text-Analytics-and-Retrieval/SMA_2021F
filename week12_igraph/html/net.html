@@ -50,8 +50,8 @@
         
 
         // parsing and collecting nodes and edges from the python
-        nodes = new vis.DataSet([{"id": 1, "label": 1, "shape": "dot"}, {"id": 2, "label": 2, "shape": "dot"}, {"id": 3, "label": 3, "shape": "dot"}]);
-        edges = new vis.DataSet([{"from": 1, "to": 2}, {"from": 2, "to": 3}, {"from": 3, "to": 1}]);
+        nodes = new vis.DataSet([{"id": "a", "label": "a", "shape": "dot", "x": 10, "y": 5}, {"id": "b", "label": "b", "shape": "dot", "x": 15, "y": 10}, {"id": "c", "label": "c", "shape": "dot", "x": 20, "y": 10}, {"id": "d", "label": "d", "shape": "dot", "x": 25, "y": 15}, {"id": "e", "label": "e", "shape": "dot", "x": 17, "y": 25}, {"id": "f", "label": "f", "shape": "dot", "x": 12, "y": 30}, {"id": "g", "label": "g", "shape": "dot", "x": 5, "y": 10}, {"id": "h", "label": "h", "shape": "dot", "x": 9, "y": 15}, {"id": "i", "label": "i", "shape": "dot", "x": 0, "y": 20}, {"id": "j", "label": "j", "shape": "dot", "x": 25, "y": 0}]);
+        edges = new vis.DataSet([{"from": "a", "to": "b"}, {"from": "a", "to": "g"}, {"from": "b", "to": "c"}, {"from": "b", "to": "h"}, {"from": "g", "to": "h"}, {"from": "h", "to": "i"}, {"from": "h", "to": "f"}, {"from": "h", "to": "e"}, {"from": "e", "to": "d"}, {"from": "d", "to": "c"}, {"from": "f", "to": "e"}]);
 
         // adding nodes and edges to the graph
         data = {nodes: nodes, edges: edges};
