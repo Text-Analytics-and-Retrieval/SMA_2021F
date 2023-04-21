@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <title>社群媒體分析</title>
+    
+    <style>
+    nav{
+      font-family: Microsoft JhengHei;
+    }
+    h2{
+      font-family: Microsoft JhengHei;
+      text-align: center;
+    }
+    table {
+      font-family: Microsoft JhengHei, arial, sans-serif;
+      border-collapse: collapse;
+    }
+    td, th {
+      text-align: center;
+      height: 30px;
+      line-height:30px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fdfdf3;
+    }
+    tr:hover{
+      background-color: #e4e8fd;
+    }
+    .fa {
+        vertical-align: middle;
+        padding-left: 5px;
+        color: red;
+    }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link disabled"><b>社群媒體分析2021</b></a>
+        <a class="nav-item nav-link active" id="nav-gs1-tab" data-toggle="tab" href="#nav-gs1" role="tab" aria-controls="nav-gs1" aria-selected="true"><b>第一次讀書會</b></a>
+        <a class="nav-item nav-link" id="nav-midp-tab" data-toggle="tab" href="#nav-midp" role="tab" aria-controls="nav-midp" aria-selected="true"><b>期中報告</b></a>
+        <a class="nav-item nav-link" id="nav-gs2-tab" data-toggle="tab" href="#nav-gs2" role="tab" aria-controls="nav-gs2" aria-selected="true"><b>第二次讀書會</b></a>
+        <a class="nav-item nav-link" id="nav-finalp-tab" data-toggle="tab" href="#nav-finalp" role="tab" aria-controls="nav-finalp" aria-selected="true"><b>期末報告</b></a>
+        <a class="nav-item nav-link" id="nav-gs3-tab" data-toggle="tab" href="#nav-gs3" role="tab" aria-controls="nav-gs3" aria-selected="true"><b>第三次讀書會</b></a>
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+    <div class='tab-pane show active' id="nav-gs1" role="tabpanel" aria-labelledby="nav-gs1-tab">
+        <table class="table">
+            <thead class='thead-light'>
+                <th width="10%">組別</th>
+                <th width="40%">主題</th>
+                <th width="10%">連結</th>
+                <th width="40%">組員</th>
+            </thead>
+            <tr>
+                <td>第一組</td>
+                <td>龍龍、老K脫口秀炎上事件之ptt八卦版風向分析</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/1st/G1/study_group1.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>林子傑、林昱秀、邢學皓、焦玉茹、陳亞琦、朱淓璘、顏廷諭</td>
+            </tr>
+            <tr>
+                <td>第二組</td>
+                <td>民眾對五倍卷發行的觀感進行情緒分析</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/1st/G2/study_group2.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>曾天鈞、鍾君右、周駿嚴、龔紫雲、周紘樟、蕭清耀</td>
+            </tr>
+            <tr>
+                <td>第三組</td>
+                <td>對PTT和Dcard上的爆紅韓劇《魷魚遊戲》進行情緒分析</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/1st/G3/study_group3.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>孫亦農、黃子源、林妤姍、劉雨瑈、林元雅</td>
+            </tr>
+            <tr>
+                <td>第四組</td>
+                <td>對ptt與東森新聞上的龍龍與老K炎上事件進行情緒分析</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/1st/G4/study_group4.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>顏宏任、王培碩、黃威凱、李佳蓉、邱承漢、陳佳伶</td>
+            </tr>
+            <tr>
+                <td>第五組</td>
+                <td>IPhone13 發表 ptt手機通訊版、IOS、八卦版輿情分析</td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/1st/G5/study_group5.ipynb" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/1st/G5/G5.docx" target="_blank">
+                        <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                </td>
+                <td>蔡旻蓉、周映君、呂奕憲、龔敖摩、王淵司、林賢育、林慶儒</td>
+            </tr>
+            <tr>
+                <td>第六組</td>
+                <td>2021 ptt房屋版房市觀測分析</td>
+                <td><a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/1st/G6/G6.docx" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                </td>
+                <td>李昀瑾、吳家羚、王莉筑、吳芷潁、李宛珊、蘇則融、林映汝</td>
+            </tr>
+            <tr>
+                <td>第七組</td>
+                <td>對ptt上的魷魚遊戲議題進行情緒分析</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/1st/G7/study_group7.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>林志勳、林建玄、田又仁、陳雅詩、曾子恬、施善騫、林明禾</td>
+            </tr>
+            <tr>
+                <td>第八組</td>
+                <td>2021八卦版平均物價水準漲跌輿情分析</td>
+                <td><a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/1st/G8/G8.docx" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                </td>
+                <td>周昆穎、李明章、鍾承玫、鄭雅丹、羅育琦、陳冠汶、楊雯珺</td>
+            </tr>
+            <tr>
+                <td>第九組</td>
+                <td>ptt八卦版魷魚遊戲劇評風向分析</td>
+                <td><a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/1st/G9/G9.docx" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                </td>
+                <td>郭耿耀、賀燕君、謝宜蓁、洪嘉駿、吳億萱、吳貞儀、鄭宇紘</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class='tab-pane show fade' id="nav-midp" role="tabpanel" aria-labelledby="nav-midp-tab">
+        <table class="table">
+            <thead class='thead-light'>
+                <th width="10%">組別</th>
+                <th width="40%">主題</th>
+                <th width="10%">連結</th>
+                <th width="40%">組員</th>
+            </thead>
+            <tr>
+                <td>第一組</td>
+                <td>銀行客訴內容分析
+                    <a href="https://www.youtube.com/watch?v=6FlHBzTlCXY&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=9&t=1s">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>                   
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/mid_project/G1/mid_project1.docx" target="_blank">
+                        <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/mid_project/G1/mid_project1.pptx" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a>                                            
+                </td>
+                <td>吳家羚、曾子恬、吳芷潁、王淵司</td>
+            </tr>
+            <tr>
+                <td>第二組</td>
+                <td>程式教育/資訊素養/科技素養 主題分析
+                     <a href="https://www.youtube.com/watch?v=8ez37YTbySU&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=22">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/mid_project/G2/mid_project2.docx" target="_blank">
+                        <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/mid_project/G2/mid_project2.pptx" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a>                                            
+                </td>
+                <td>林慶儒、李宛珊、賀燕君</td>
+            </tr>
+            <tr>
+                <td>第三組</td>
+                <td>雙11購物於PTT討論版之情緒分析
+                     <a href="https://www.youtube.com/watch?v=YUJw41xcMS0&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=11">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/mid_project/G3/mid_project3.docx" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                </td>
+                <td>郭耿耀、周昆穎、李昀瑾、王莉筑</td>
+            </tr>
+            <tr>
+                <td>第四組</td>
+                <td>對PTT在1218公投案進行分析以及探討
+                     <a href="https://www.youtube.com/watch?v=CyxZC8Qx3ZQ&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=14">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/mid_project/G4/mid_project4.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>黃威凱、顏宏任、李佳蓉、邢學皓</td>
+            </tr>
+            <tr>
+                <td>第五組</td>
+                <td>罷免陳柏惟事件之社群討論_以PTT與DCARD為例
+                     <a href="https://www.youtube.com/watch?v=HAsgSSm9X_M&list=PLEHDaByrqwP1P0_E6WO5PAyEf_mzFgutN&index=41">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/mid_project/G5/mid_project5.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>黃子源、孫亦農、黃弘瑋、呂奕憲</td>
+            </tr>
+            <tr>
+                <td>第六組</td>
+                <td>線上教育的趨勢分析
+                     <a href="https://www.youtube.com/watch?v=Bxj9TQkfYJA&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=5">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/mid_project/G6/mid_project6.docx" target="_blank">
+                        <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/mid_project/G6/mid_project6.pptx" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a>                                            
+                </td>
+                <td>鍾承玫、謝宜蓁、吳貞儀、林映汝</td>
+            </tr>
+            <tr>
+                <td>第七組</td>
+                <td>PTT八卦板的高端疫苗議題分析
+                     <a href="https://www.youtube.com/watch?v=1vPrXA9q1ls&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=7">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>                   
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/mid_project/G7/mid_project7.ipynb" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/mid_project/G7/mid_project7.pptx" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a>                                            
+                </td>
+                <td>陳佳伶、顏廷諭、曾天鈞</td>
+            </tr>
+            <tr>
+                <td>第八組</td>
+                <td>新媒體的崛起：觀眾對於走鐘獎之正負面看法
+                     <a href="https://www.youtube.com/watch?v=XG0z5yLCA8A&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=6">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/mid_project/G8/mid_project8.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>林昱秀、龔紫雲、周映君、蔡旻蓉</td>
+            </tr>
+            <tr>
+                <td>第九組</td>
+                <td>服務業實習生日誌情緒分析
+                     <a href="https://www.youtube.com/watch?v=43C1jdkzRpM&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=23">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/mid_project/G9/mid_project9.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>周紘樟、鍾君右、林妤姍、陳亞琦</td>
+            </tr>
+            <tr>
+                <td>第十組</td>
+                <td>PTT Gossip版的五倍券議題進行情緒分析
+                     <a href="https://www.youtube.com/watch?v=V0M7MUuJW38&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=12">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/mid_project/G10/mid_project10.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>焦玉茹、林元雅、劉雨瑈、周駿嚴</td>
+            </tr>
+            <tr>
+                <td>第十一組</td>
+                <td>台中顏家中二選區在地勢力
+                     <a href="https://www.youtube.com/watch?v=07bxCtgtHCs&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=13">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/mid_project/G11/mid_project11.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>朱淓璘、蕭清耀、邱承漢、王培碩</td>
+            </tr>
+            <tr>
+                <td>第十二組</td>
+                <td>PTT八卦版文本分析：台積電高雄設廠
+                     <a href="https://www.youtube.com/watch?v=rBZ46P23LRg&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=21">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>                   
+                    <a href="https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/mid_project/G12/mid_project12.pdf" target="_blank">
+                        <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                    <a href="https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/mid_project/G12/mid_project_ppt.pdf" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a> 
+                </td>
+                <td>陳雅詩、李明章、洪嘉駿、林志勳</td>
+            </tr>
+            <tr>
+                <td>第十三組</td>
+                <td>PTT八卦版 薪資調漲討論分析
+                     <a href="https://www.youtube.com/watch?v=hccRh3kjH_0&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=9">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/mid_project/G13/mid_project13.pdf" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-sm">ppt</button>
+                    </a>
+                </td>
+                <td>陳冠汶、林明禾、鄭雅丹、吳憶萱</td>
+            </tr>
+            <tr>
+                <td>第十四組</td>
+                <td>PTT八卦版物價波動文本分析
+                     <a href="https://www.youtube.com/watch?v=K7ms9AAfOaE&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=20">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/mid_project/G14/mid_project14.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>林賢育、林建玄、楊雯珺、田又仁</td>
+            </tr>
+            <tr>
+                <td>第十五組</td>
+                <td>辣椒水/球棒衝突事件分析
+                     <a href="https://www.youtube.com/watch?v=-xDVmItBAvo&list=PLEHDaByrqwP1xXkJMufAbVDRjaNtVHIYx&index=10">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>                    
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/mid_project/G15/mid_project15.docx" target="_blank">
+                        <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/mid_project/G15/mid_project15.pptx" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a> 
+                </td>
+                <td>羅育琦、蘇則融、施善騫</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class='tab-pane show' id="nav-gs2" role="tabpanel" aria-labelledby="nav-gs2-tab">
+        <table class="table">
+            <thead class='thead-light'>
+                <th width="10%">組別</th>
+                <th width="40%">主題</th>
+                <th width="10%">連結</th>
+                <th width="40%">組員</th>
+            </thead>
+            <tr>
+                <td>第一組</td>
+                <td>陳柏惟罷免案 PTT 八卦政黑版輿情分析</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/2nd/G1/study_group1.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>林子傑、林昱秀、邢學皓、焦玉茹、陳亞琦、朱淓璘、顏廷諭</td>
+            </tr>
+            <tr>
+                <td>第二組</td>
+                <td>對ptt上此次核能公投的議題分析</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/2nd/G2/study_group2.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>曾天鈞、鍾君右、周駿嚴、龔紫雲、周紘樟、蕭清耀</td>
+            </tr>
+            <tr>
+                <td>第三組</td>
+                <td>ETtoday新聞五大板新聞事件分析</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/2nd/G3/study_group3.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>孫亦農、黃子源、林妤姍、劉雨瑈、林元雅</td>
+            </tr>
+            <tr>
+                <td>第四組</td>
+                <td>PTT對於Disney+的討論</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/2nd/G4/study_group4.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>顏宏任、王培碩、黃威凱、李佳蓉、邱承漢、陳佳伶</td>
+            </tr>
+            <tr>
+                <td>第五組</td>
+                <td>以Netflix字詞分類</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/2nd/G5/study_group5.ipynb" target="_blank">
+                    
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>蔡旻蓉、周映君、呂奕憲、龔敖摩、王淵司、林賢育、林慶儒</td>
+            </tr>
+            <tr>
+                <td>第六組</td>
+                <td>家庭暴力新聞風向分析</td>
+                <td><a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/2nd/G6/study_group6.pptx" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a>
+                </td>
+                <td>李昀瑾、吳家羚、王莉筑、吳芷潁、李宛珊、蘇則融、林映汝</td>
+            </tr>
+            <tr>
+                <td>第七組</td>
+                <td>振興五倍券使用情緒分析</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/2nd/G7/study_group7.pdf" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a>
+                </td>
+                <td>林志勳、林建玄、田又仁、陳雅詩、曾子恬、施善騫、林明禾</td>
+            </tr>
+            <tr>
+                <td>第八組</td>
+                <td>通貨膨脹 PTT 財經八卦版輿情分析</td>
+                <td><a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/2nd/G8/study_group8.docx" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                </td>
+                <td>周昆穎、李明章、鍾承玫、鄭雅丹、羅育琦、陳冠汶、楊雯珺</td>
+            </tr>
+            <tr>
+                <td>第九組</td>
+                <td>分析熱門主題:家庭暴力</td>
+                <td><a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/2nd/G9/study_group9.docx" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>                    
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/2nd/G9/study_group9.pptx" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a> 
+                </td>
+                <td>郭耿耀、賀燕君、謝宜蓁、洪嘉駿、吳億萱、吳貞儀、鄭宇紘</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class='tab-pane show fade' id="nav-finalp" role="tabpanel" aria-labelledby="nav-finalp-tab">
+        <table class="table">
+            <thead class='thead-light'>
+                <th width="10%">組別</th>
+                <th width="40%">主題</th>
+                <th width="10%">連結</th>
+                <th width="40%">組員</th>
+            </thead>
+            <tr>
+                <td>第一組</td>
+                <td>Oo銀行客訴內容分析
+                    <a href="https://www.youtube.com/watch?v=D1llc7FUtX0&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=1">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>                   
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/final_project1/G1/final_project1.pdf" target="_blank">
+                        <button type="button" class="btn btn-outline-primary btn-sm">ppt</button>
+                    </a>                                          
+                </td>
+                <td>吳家羚、曾子恬、吳芷潁、王淵司</td>
+            </tr>
+            <tr>
+                <td>第二組</td>
+                <td>以中山大學工作流程平台進行資訊教育和素養的主題分析
+                     <a href="https://www.youtube.com/watch?v=4Ul0UPQlVyM&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=2">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/final_project/G2/final_project2.docx" target="_blank">
+                        <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/final_project/G2/final_project2.pptx" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a>                                            
+                </td>
+                <td>林慶儒、李宛珊、賀燕君</td>
+            </tr>
+            <tr>
+                <td>第三組</td>
+                <td>從PTT論壇分析年終獎金及調薪議題之情緒分析
+                     <a href="https://www.youtube.com/watch?v=EobHMjhNE4g&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=3">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/final_project/G3/final_project3.docx" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                </td>
+                <td>郭耿耀、周昆穎、李昀瑾、王莉筑</td>
+            </tr>
+            <tr>
+                <td>第四組</td>
+                <td>PTT網友對於長榮年終事件的討論
+                     <a href="https://www.youtube.com/watch?v=8Bs5TE324JE&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=4">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/final_project/G4/final_project4.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>黃威凱、顏宏任、李佳蓉、邢學皓</td>
+            </tr>
+            <tr>
+                <td>第五組</td>
+                <td>罷免陳柏惟支社群討論分析－以ptt為例
+                     <a href="https://www.youtube.com/watch?v=qHnewn8JOMM&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=5">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/final_project/G5/final_project5.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>黃子源、孫亦農、黃弘瑋、呂奕憲</td>
+            </tr>
+            <tr>
+                <td>第六組</td>
+                <td>語言學習的趨勢分析
+                     <a href="https://www.youtube.com/watch?v=ZWMWT8j-pYk&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=6">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/final_project/G6/final_project6.docx" target="_blank">
+                        <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/final_project/G6/final_project6.pptx" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a>                                            
+                </td>
+                <td>鍾承玫、謝宜蓁、吳貞儀、林映汝</td>
+            </tr>
+            <tr>
+                <td>第七組</td>
+                <td>醫護逐字稿之分析
+                     <a href="https://www.youtube.com/watch?v=kr7VR41k3Lw&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=7">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>                   
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/final_project/G7/final_project7_1.ipynb" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ipynb1</button>
+                    </a>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/final_project/G7/final_project7_2.ipynb" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ipynb2</button>
+                    </a>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/final_project/G7/final_project7_3.ipynb" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ipynb3</button>
+                    </a>                                            
+                </td>
+                <td>陳佳伶、顏廷諭、曾天鈞</td>
+            </tr>
+            <tr>
+                <td>第八組</td>
+                <td>華燈初上主題探討
+                     <a href="https://www.youtube.com/watch?v=Lc8kpe0JzMU&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=8">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/final_project/G8/final_project8.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>林昱秀、龔紫雲、周映君、蔡旻蓉</td>
+            </tr>
+            <tr>
+                <td>第九組</td>
+                <td>醫電合作專案
+                     <a href="https://www.youtube.com/watch?v=pqoqkK8iM9I&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=9">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/final_project/G9/final_project9.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>周紘樟、鍾君右、林妤姍、陳亞琦</td>
+            </tr>
+            <tr>
+                <td>第十組</td>
+                <td>王力宏離婚事件
+                     <a href="https://www.youtube.com/watch?v=LS54hGPnZgE&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=10">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/final_project/G10/final_project10.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>焦玉茹、林元雅、劉雨瑈、周駿嚴</td>
+            </tr>
+            <tr>
+                <td>第十一組</td>
+                <td>醫電公司合作專案
+                     <a href="https://www.youtube.com/watch?v=FRHwkRa53VU&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=11">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/final_project/G11/final_project11.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>朱淓璘、蕭清耀、邱承漢、王培碩</td>
+            </tr>
+            <tr>
+                <td>第十二組</td>
+                <td>PTT八卦版缺電議題分析
+                     <a href="https://www.youtube.com/watch?v=i28kjqHorQ0&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=12">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>                   
+                    <a href="https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/final_project/G12/final_project12.docx" target="_blank">
+                        <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                </td>
+                <td>陳雅詩、李明章、洪嘉駿、林志勳</td>
+            </tr>
+            <tr>
+                <td>第十三組</td>
+                <td>PTT八卦版-薪資調漲討論分析
+                     <a href="https://www.youtube.com/watch?v=P6xvwTmuxdE&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=13">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/final_project/G13/final_project13.docx" target="_blank">
+                        <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                </td>
+                <td>陳冠汶、林明禾、鄭雅丹、吳憶萱</td>
+            </tr>
+            <tr>
+                <td>第十四組</td>
+                <td>Omicron本土首例
+                     <a href="https://www.youtube.com/watch?v=Z5EoHHd3H10&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=14">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/final_project/G14/final_project14.pptx" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a>
+                </td>
+                <td>林賢育、林建玄、楊雯珺、田又仁</td>
+            </tr>
+            <tr>
+                <td>第十五組</td>
+                <td>藝人羅志祥復出風向分析
+                     <a href="https://www.youtube.com/watch?v=QRnkWWUC3R4&list=PLEHDaByrqwP3_iyGLqheXAH65y7SdAw30&index=15">
+                        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                    </a>
+                </td>
+                <td>                    
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/final_project/G15/final_project15.docx" target="_blank">
+                        <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/final_project/G15/final_project15.pptx" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a> 
+                </td>
+                <td>羅育琦、蘇則融、施善騫</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class='tab-pane show' id="nav-gs3" role="tabpanel" aria-labelledby="nav-gs3-tab">
+        <table class="table">
+            <thead class='thead-light'>
+                <th width="10%">組別</th>
+                <th width="40%">主題</th>
+                <th width="10%">連結</th>
+                <th width="40%">組員</th>
+            </thead>
+            <tr>
+                <td>第一組</td>
+                <td>2021公投社群網路分析</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/3rd/G1/study_group1.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>林子傑、林昱秀、邢學皓、焦玉茹、陳亞琦、朱淓璘、顏廷諭</td>
+            </tr>
+            <tr>
+                <td>第二組</td>
+                <td>公投結果分析</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/3rd/G2/study_group2.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>曾天鈞、鍾君右、周駿嚴、龔紫雲、周紘樟、蕭清耀</td>
+            </tr>
+            <tr>
+                <td>第三組</td>
+                <td>事件分析 -「蕾神之鎚」VS「宏慌之力」 王力宏婚變大戰</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/3rd/G3/study_group3.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>孫亦農、黃子源、林妤姍、劉雨瑈、林元雅</td>
+            </tr>
+            <tr>
+                <td>第四組</td>
+                <td>PTT網友對於高嘉瑜事件的討論</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/3rd/G4/study_group4.ipynb" target="_blank">
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                </td>
+                <td>顏宏任、王培碩、黃威凱、李佳蓉、邱承漢、陳佳伶</td>
+            </tr>
+            <tr>
+                <td>第五組</td>
+                <td>第三次讀書會：針對公投大選之主題探討</td>
+                <td><a href="https://nbviewer.org/github/Text-Analytics-and-Retrieval/SMA_2021F/blob/master/study_group/3rd/G5/study_group5.ipynb" target="_blank">
+                    
+                    <button type="button" class="btn btn-outline-danger btn-sm">ipynb</button>
+                    </a>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/3rd/G5/study_group5.docx" target="_blank">
+                        <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                </td>
+                <td>蔡旻蓉、周映君、呂奕憲、龔敖摩、王淵司、林賢育、林慶儒</td>
+            </tr>
+            <tr>
+                <td>第六組</td>
+                <td>民眾對第三劑疫苗的期待度</td>
+                <td><a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/3rd/G6/study_group6.docx" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                </td>
+                <td>李昀瑾、吳家羚、王莉筑、吳芷潁、李宛珊、蘇則融、林映汝</td>
+            </tr>
+            <tr>
+                <td>第七組</td>
+                <td>核四公投議題</td>
+                <td><a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/3rd/G7/study_group7.docx" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                </td>
+                <td>林志勳、林建玄、田又仁、陳雅詩、曾子恬、施善騫、林明禾</td>
+            </tr>
+            <tr>
+                <td>第八組</td>
+                <td>公眾人物八卦新聞</td>
+                <td><a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/3rd/G8/study_group8.docx" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/3rd/G8/study_group8.pdf" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a>
+                </td>
+                <td>周昆穎、李明章、鍾承玫、鄭雅丹、羅育琦、陳冠汶、楊雯珺</td>
+            </tr>
+            <tr>
+                <td>第九組</td>
+                <td>從宏蕾事件觀察社會輿論趨勢</td>
+                <td><a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/3rd/G9/study_group9.docx" target="_blank">
+                    <button type="button" class="btn btn-outline-primary btn-sm">doc</button>
+                    </a>                    
+                    <a href="https://docs.google.com/viewer?url=https://github.com/Text-Analytics-and-Retrieval/SMA_2021F/raw/master/study_group/3rd/G9/study_group9.pptx" target="_blank">
+                        <button type="button" class="btn btn-outline-danger btn-sm">ppt</button>
+                    </a> 
+                </td>
+                <td>郭耿耀、賀燕君、謝宜蓁、洪嘉駿、吳億萱、吳貞儀、鄭宇紘</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+<script>
+    $('a').attr('target', '_blank');
+</script>
+</body>
+</html>
